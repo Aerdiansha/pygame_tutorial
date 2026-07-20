@@ -31,7 +31,12 @@ while running:
     screen.fill(WHITE)
     pygame.display.flip()
 
+    # Update
     all_sprites.update()
+
+    # Draw / render
+    all_sprites.draw(screen)
+    pygame.display.flip()
 
 # Quit the game
     for event in pygame.event.get():
